@@ -1,0 +1,126 @@
+:root {
+    --dark--blue : #001e4d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark--blue);
+    
+}
+
+.app {
+    height: 100dvh;
+    max-width: 500px;
+    width: 60dvw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+}
+
+.app-img {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-carousel {
+    width: 100%;
+    height: 35vh;
+    max-height: 40vh;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.quiz {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+}
+.questions {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question { 
+    color: var(--dark--blue);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--dark--blue);
+    margin: 0.5rem 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    width: 100%;
+    height: 60%;
+}
+
+.btn {
+    color: var(--dark--blue);
+    font-weight: 500;
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--dark--blue);
+    color: #d3d3d3;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 7px;
+}
+
+.pre-next {
+    flex: 1;
+    background-color: var(--dark--blue);
+    color: #fff;
+    font-weight: 500;
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
