@@ -40,28 +40,35 @@ previousQuestion();
 });
 
 function updateNavButtons() {
-if (currentQuestion === 0) {
-  document.querySelector('.js-previous-button').classList.add('hidden');
-}
-if (currentQuestion === questions.length-1) {
-  document.querySelector('.js-next-button').classList.add('hidden');
-}
-if (currentQuestion > 0) {
-  document.querySelector('.js-previous-button').classList.remove('hidden');
+  const previousButton = document.querySelector('.js-previous-button');
+  const nextButton = document.querySelector('.js-next-button');
+  const submitLink = document.querySelector('.js-submit-link');
+
+  if (currentQuestion === 0) {
+    previousButton.classList.add('hidden');
+    submitLink.classList.add('hidden');
   }
-if (currentQuestion < questions.length-1) {
-document.querySelector('.js-next-button').classList.remove('hidden');
-}
+  if (currentQuestion === questions.length-1) {
+    nextButton.classList.add('hidden');
+    submitLink.classList.remove('hidden');
+  }
+  if (currentQuestion > 0) {
+    previousButton.classList.remove('hidden');
+    }
+  if (currentQuestion < questions.length-1) {
+    nextButton.classList.remove('hidden');
+    submitLink.classList.add('hidden');
+  }
 }
 
-document.body.addEventListener('keydown', (event) => {
-if (event.key === 'ArrowRight') {
-  if (currentQuestion < questions.length-1 && currentQuestion >= 0) {document.querySelector('.js-next-button').click();
+  document.body.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowRight') {
+    if (currentQuestion < questions.length-1 && currentQuestion >= 0) {document.querySelector('.js-next-button').click();
+    }
+  } else if (event.key === 'ArrowLeft') {
+    if (currentQuestion > 0) {document.querySelector('.js-previous-button').click();
+    }
   }
-} else if (event.key === 'ArrowLeft') {
-  if (currentQuestion > 0) {document.querySelector('.js-previous-button').click();
-  }
-}
 });
 
 function updateImage() {
