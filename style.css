@@ -7,25 +7,51 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 body {
     background-color: var(--dark--blue);
-    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .app {
-    height: 100dvh;
-    max-width: 500px;
+    max-width: 600px;
     width: 60dvw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 1rem;
     gap: 1rem;
-    background-color: #d3d3d3;
+    background-color: #e6e6e6;
     border-radius: 10px;
+}
+
+.app-welcome {
+    background: #e6e6e6;
+    border-radius: 10px;
+    padding: 40px;
+    height: 85vh;
+    max-width: 600px;
+    width: 100%;
+    box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.app-content {
+    margin: 5px;
 }
 
 .app-img {
@@ -59,7 +85,8 @@ body {
     justify-content: center;
 }
 
-.question { 
+.question,
+.note-heading { 
     color: var(--dark--blue);
     font-weight: 600;
     font-size: 25px;
@@ -108,12 +135,12 @@ hr {
     margin-top: 7px;
 }
 
-.pre-next {
+.quiz-btn {
     flex: 1;
     background-color: var(--dark--blue);
     color: #fff;
     font-weight: 500;
-    width: 100px;
+    width: 150px;
     border: 0;
     padding: 10px;
     margin: 20px auto 0;
@@ -123,4 +150,54 @@ hr {
 
 .hidden {
     display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.intro {
+    color: #011a3f;
+    margin: 50px 0 25px 0;
+}
+
+.intro-heading {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.start-btn {
+    margin-bottom: 20px;
+}
+
+.note-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255 255 255 / 27%);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(107, 107, 107, 0.178);
+}
+
+.note-heading {
+    text-align: center;
+}
+
+.notes {
+}
+
+.note-list {
+    margin-top: 20px;
+    letter-spacing: .5px;
+    color: #011a3f;
+    line-height: 1.2;
 }
