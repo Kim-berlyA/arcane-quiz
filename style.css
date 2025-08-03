@@ -192,12 +192,34 @@ a {
     text-align: center;
 }
 
-.notes {
-}
-
 .note-list {
     margin-top: 20px;
     letter-spacing: .5px;
     color: #011a3f;
     line-height: 1.2;
+}
+
+.take-again-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result-image {
+    width: 300px; 
+    max-width: 700px;
+    border-radius: 5px;
+}
+.result-text {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000000;
 }
