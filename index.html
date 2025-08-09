@@ -12,7 +12,9 @@
       <div class="intro">
         <h1 class="intro-heading">Which Arcane Character matches Your Personality?</h1>
       </div>
-      <a href="questions.html" class="start-btn-link"><button class="start-btn quiz-btn">Start Quiz</button></a>
+      <div class="start-btn-cont">
+        <button class="start-btn quiz-btn js-start-btn">Start Quiz</button>
+      </div>
 
       <div class="divider">&nbsp;</div>
 
@@ -27,5 +29,19 @@
       </div>
     </div>
   </div>
+
+  <audio id="bg-music" src="stromae-pomme-ma-meilleure-ennemie-mp3_tq3wX35z.mp3" loop></audio>
+  <script>
+    const music = document.getElementById("bg-music");
+    function startMusic() {
+    music.play().catch(err => console.log("Playback blocked:",
+    err));
+    document.removeEventListener("click", startMusic);
+    }
+    // Start after the first click anywhere
+    document.addEventListener("click", startMusic);
+  </script>
+
+  <script type="module" src="./scripts/content.js"></script>
 </body>
 </html>
