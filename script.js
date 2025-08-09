@@ -73,34 +73,34 @@ function updateNavButtons() {
 
 function updateImage() {
   if (currentQuestion === 0) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/jinx-2.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/jinx-2.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 1) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/viktor-and-jayce.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/viktor-and-jayce.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 2) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/isha-1.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/isha-1.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 3) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/caitlyn.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/caitlyn.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 4) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/firelight-hideout.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/firelight-hideout.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 5) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/silco-and-jinx.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/silco-and-jinx.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 6) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/viktor-3.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/viktor-3.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 7) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/jinx-and-ekko-6.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/jinx-and-ekko-6.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 8) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/sevika-and-jinx.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/sevika-and-jinx.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 9) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/jinx-vs-vi.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/jinx-vs-vi.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 10) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/jinx-and-ekko-4.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/jinx-and-ekko-4.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 11) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/ekko.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/ekko.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 12) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/powder.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/powder.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 13) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/jinx-3.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/jinx-3.jpg" alt="mountain" class="image">'
   } else if (currentQuestion === 14) {
-    document.querySelector('.app-img').innerHTML = '<img src="img/viktor.jpg" alt="mountain" class="image-carousel">'
+    document.querySelector('.app-image').innerHTML = '<img src="img/viktor.jpg" alt="mountain" class="image">'
   }
 }
