@@ -39,6 +39,29 @@ html {
 @media (max-width: 1024px) {
     .app {
         min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .image {
+        flex: 3;
+    }
+
+    .question {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .option {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
     }
 }
 
