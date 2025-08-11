@@ -1,19 +1,23 @@
-import { questions } from "./questions.js";
+import { characters, questions } from "./questions.js";
 import{loadContent} from "./content.js"
 
 let currentQuestion = 0;
 
-function nextQuestion() {
-if (currentQuestion < questions.length) {
-  document.querySelector('.js-question').innerHTML = questions[currentQuestion].question;
+let selectedOptions = new Array(questions.length).fill(null);
 
-  document.querySelector('.js-option-1').innerHTML = questions[currentQuestion].options[0].text;
-  document.querySelector('.js-option-2').innerHTML = questions[currentQuestion].options[1].text;
-  document.querySelector('.js-option-3').innerHTML = questions[currentQuestion].options[2].text;
-  document.querySelector('.js-option-4').innerHTML = questions[currentQuestion].options[3].text;
-  updateNavButtons();
-  updateImage();
-}
+function nextQuestion() {
+  if (currentQuestion < questions.length) {
+    document.querySelector('.js-question').innerHTML = questions[currentQuestion].question;
+
+    document.querySelector('.js-option-1').innerHTML = questions[currentQuestion].options[0].text;
+    document.querySelector('.js-option-2').innerHTML = questions[currentQuestion].options[1].text;
+    document.querySelector('.js-option-3').innerHTML = questions[currentQuestion].options[2].text;
+    document.querySelector('.js-option-4').innerHTML = questions[currentQuestion].options[3].text;
+
+    updateNavButtons();
+    updateImage();
+    highlightSelectedOption(selectedOptions[currentQuestion]);
+  }
 }
 document.querySelector('.js-next-button').addEventListener('click', function() {
 currentQuestion++;
@@ -22,18 +26,19 @@ nextQuestion();
 nextQuestion();
 
 function previousQuestion() {
-if (currentQuestion > 0) {
-  currentQuestion--;
-  document.querySelector('.js-question').innerHTML = questions[currentQuestion].question;
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    document.querySelector('.js-question').innerHTML = questions[currentQuestion].question;
 
-  document.querySelector('.js-option-1').innerHTML = questions[currentQuestion].options[0].text;
-  document.querySelector('.js-option-2').innerHTML = questions[currentQuestion].options[1].text;
-  document.querySelector('.js-option-3').innerHTML = questions[currentQuestion].options[2].text;
-  document.querySelector('.js-option-4').innerHTML = questions[currentQuestion].options[3].text;
-  
-updateNavButtons();
-updateImage();
-}
+    document.querySelector('.js-option-1').innerHTML = questions[currentQuestion].options[0].text;
+    document.querySelector('.js-option-2').innerHTML = questions[currentQuestion].options[1].text;
+    document.querySelector('.js-option-3').innerHTML = questions[currentQuestion].options[2].text;
+    document.querySelector('.js-option-4').innerHTML = questions[currentQuestion].options[3].text;
+    
+    updateNavButtons();
+    updateImage();
+    highlightSelectedOption(selectedOptions[currentQuestion]);
+  }
 }
 
 document.querySelector('.js-previous-button').addEventListener('click', function() {
@@ -62,7 +67,7 @@ function updateNavButtons() {
   }
 }
 
-  document.body.addEventListener('keydown', (event) => {
+document.body.addEventListener('keydown', (event) => {
   if (event.key === 'ArrowRight') {
     if (currentQuestion < questions.length-1 && currentQuestion >= 0) {document.querySelector('.js-next-button').click();
     }
@@ -107,6 +112,51 @@ function updateImage() {
 }
 
 document.querySelector('.js-submit-button').addEventListener('click', () => {
-  console.log('i');
   loadContent('result');
 });
+
+
+function addPoint(names) {
+  names.forEach(name => {
+    const char = characters.find(character => character.name === name);
+      char.score++;
+  });
+}
+
+function removePoint(names) {
+  names.forEach(name => {
+    const char = characters.find(character => character.name === name);
+      char.score--;
+  });
+}
+
+function highlightSelectedOption(selectedOptionIndex) {
+  document.querySelectorAll('.js-option').forEach((option, index) => {
+    if (index === selectedOptionIndex) {
+      option.classList.add('selected');
+    } else {
+      option.classList.remove('selected');
+    }
+  });
+}
+
+function handleOptionClicked(optionIndex) {
+  const prevSelection = selectedOptions[currentQuestion];
+
+  if (prevSelection !== null) {
+    removePoint(questions[currentQuestion].options[selectedOptions[currentQuestion]].characters);
+  } 
+  addPoint(questions[currentQuestion].options[optionIndex].characters);
+
+  selectedOptions[currentQuestion] = optionIndex;
+  highlightSelectedOption(optionIndex);
+}
+
+export function optionClickListener() {
+  document.querySelectorAll('.js-option').forEach((optn, idx) => {
+    optn.addEventListener('click', () => {
+      handleOptionClicked(idx);
+    });
+  });
+}
+

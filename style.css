@@ -46,10 +46,9 @@ body {
 }
 
 .app {
-    margin: 2rem;
     background: #e6e6e6;
     border-radius: 1.5rem;
-    padding: 2.5rem;
+    padding: 2.5rem 1.5rem;
     max-width: 37.5rem;
     width: 100%;
     box-shadow:
@@ -68,7 +67,7 @@ body {
 
 .image {
     width: 100%;
-    height: 15.625rem;
+    height: 19.625rem;
     border-radius: 0.3125rem;
     object-fit: cover;
 }
@@ -89,15 +88,14 @@ body {
     padding: 0.625rem;
     margin-bottom: 0.75rem;
     color: var(--dark--blue);
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: all .3s;
     width: 100%;
     text-align: left;
 }
 
-.option:hover,
-.option:focus {
+.selected {
     background-color: var(--dark--blue);
     color: #d3d3d3;
 }
@@ -114,6 +112,7 @@ body {
     background-color: var(--dark--blue);
     color: #fff;
     font-weight: 500;
+    font-size: 1.1rem;
     width: 9.375rem;
     border: 0;
     padding: 0.625rem;
@@ -171,7 +170,7 @@ body {
     line-height: 1.6;
     position: relative;
     margin-bottom: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #011a3f;
 }
 
@@ -189,13 +188,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-.result-image {
-    width: 18.75rem; 
-    max-width: 43.75rem;
-    border-radius: 0.3125rem;
+
+.result-title {
+    margin-top: 1.6rem;
+    font-size: 2.25rem;
+    color: #011a3f;
+    font-weight: 700;
 }
+
 .result-text {
     margin-top: 0.625rem;
-    font-size: 1.25rem;
-    color: #000000;
+    font-size: 1.3rem;
+    color: #011a3f;
 }

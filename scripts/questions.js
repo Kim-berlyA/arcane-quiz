@@ -1,10 +1,28 @@
 export let characters = [
-  {name: "Jinx", score: 0},
-  {name: "Vi", score: 0},
-  {name: "Viktor", score: 0},
-  {name: "Jayce", score: 0},
-  {name: "Caitlyn", score: 0},
-  {name: "Ekko", score: 0}
+  {name: "Jinx", score: 0, descriptionTitle: "Jinx — Unpredictable and Creative",
+    description: "You are unpredictable and creative, thriving in the chaos of life and turning challenges into opportunities to express yourself. Your ideas come fast and free, and you often act on impulse or instinct rather than overthinking, which makes you exciting and sometimes surprising to those around you. While your spontaneity can sometimes cause trouble, it also shows your fearless and bold nature. For the people you trust deeply, your loyalty is fierce, even if you express it in ways that others might find unusual or hard to read",
+    image: '<img src="img/aJinx.jpg" alt="arcane picture" class="image">'
+  },
+  {name: "Vi", score: 0, descriptionTitle: "Vi — Determined and Protective",
+    description: "When it comes to facing obstacles, you’re determined and protective, ready to stand up for the people you care about without hesitation. You’re someone who prefers action over endless deliberation—if something needs doing, you dive right in. That decisiveness can sometimes push you toward riskier choices when emotions run high, but you always carry a strong sense of responsibility for those who depend on you",
+    image: '<img src="img/aVi.jpg" alt="arcane picture" class="image">'
+  },
+  {name: "Viktor", score: 0, descriptionTitle: "Viktor — Vision-driven and Analytical",
+    description: "You have a vision-driven and analytical side. You’re motivated by growth and progress, always looking for ways to improve yourself and your surroundings. Your mind works methodically, breaking down problems to find smart, practical solutions. Sometimes, your focus on goals can make you overlook emotional nuances, but your commitment to making meaningful, lasting changes is clear and steady.",
+    image: '<img src="img/aViktor.jpg" alt="arcane picture" class="image">'
+  },
+  {name: "Jayce", score: 0, descriptionTitle: "Jayce — Ambituous and Persuasive",
+    description: "Ambition fuels you, you’re confident in your ideas and willing to take risks to bring them to life. You blend creativity with persuasion, inspiring others with your passion and drive. At times, your confidence might tip into overconfidence, but challenges excite you and bring out your best when it comes to bold decisions.",
+    image: '<img src="img/aJayce.jpg" alt="arcane picture" class="image">'
+  },
+  {name: "Caitlyn", score: 0, descriptionTitle: "Caitlyn — Strategic and Composed",
+    description: "Strategic and composed, you tend to approach important decisions with care and precision. You prefer to weigh your options fully before acting, and your calm presence often reassures those around you. While this carefulness might slow you down sometimes, it guarantees that when you do move forward, you do so with clarity and purpose.",
+    image: '<img src="img/aCaitlyn.jpg" alt="arcane picture" class="image">'
+  },
+  {name: "Ekko", score: 0, descriptionTitle: "Ekko — Resourceful and Adaptive", 
+    description: "You’re resourceful and adaptive. When things don’t go according to plan, you adjust quickly and find new paths forward. Your inventive mindset helps you make the most of whatever resources you have, often uncovering solutions others miss. A deep sense of responsibility drives you, and you’re willing to take bold steps to protect and uplift your community—even if that means stepping into tough or risky situations.",
+    image: '<img src="img/aEkko.jpg" alt="arcane picture" class="image">'
+  }
 ]
 
 export const questions = [
@@ -38,8 +56,8 @@ export const questions = [
 {
   question : "How do you react to authority?",
   options : [
-    {text: "It\'s a tool—use it or bend it.", characters: ["Viktor"]},
-    {text: "You respect it, but won\'t be controlled by it.", characters: ["Vi"]},
+    {text: "It's a tool—use it or bend it.", characters: ["Viktor"]},
+    {text: "You respect it, but won't be controlled by it.", characters: ["Vi"]},
     {text: "You question it and challenge it often.", characters: ["Ekko"]},
     {text: "You are it.", characters: ["Jayce"]}
   ]
@@ -54,7 +72,7 @@ export const questions = [
   ]
 },
 {
-  question : "What\'s your vibe in a group?",
+  question : "What's your vibe in a group?",
   options : [
     {text: "The one who keeps everyone moving forward.", characters: ["Jayce"]},
     {text: "The wildcard—never predictable.", characters: ["Jinx"]},
@@ -83,8 +101,8 @@ export const questions = [
 {
   question : "What do others often misunderstand about you?",
   options : [
-    {text: "They think you don\'t care—when you really do.", characters: ["Viktor"]},
-    {text: "They assume you\'re all about control.", characters: ["Caitlyn"]},
+    {text: "They think you don't care—when you really do.", characters: ["Viktor"]},
+    {text: "They assume you're all about control.", characters: ["Caitlyn"]},
     {text: "They miss your softer side.", characters: ["Vi"]},
     {text: "They think you're reckless, but you're calculated.", characters: ["Jinx"]}
   ]
@@ -122,25 +140,25 @@ export const questions = [
     {text: "A lightning bolt that strikes and disappears.", characters: ["Jayce"]},
     {text: "A loaded question no one wants to answer.", characters: ["Jinx"]},
     {text: "A ticking clock counting toward something big.", characters: ["Ekko"]},
-    {text: "A locked door only a few can open.", characters: ["Viktor"]}
+    {text: "A broken part doesn’t always need replacing… sometimes it just needs a better purpose.", characters: ["Viktor"]}
   ]
 },
 {
   question : "What do you value most in yourself?",
   options : [
-    {text: "Your strength to face things others can\'t.", characters: ["Vi"]},
+    {text: "Your strength to face things others can't.", characters: ["Vi"]},
     {text: "Your creativity and love of building.", characters: ["Jayce"]},
     {text: "Your independence and unpredictability.", characters: ["Jinx"]},
-    {text: "Your insight and vision for what\'s ahead.", characters: ["Viktor"]}
+    {text: "Your insight and vision for what's ahead.", characters: ["Viktor"]}
   ]
 },
 {
-  question : "If you had a secret, you\'d…",
+  question : "If you had a secret, you'd…",
   options : [
     {text: "Encode it into a design no one notices.", characters: ["Viktor"]},
     {text: "Tell no one, ever.", characters: ["Caitlyn"]},
-    {text: "Drop hints just to see who\'s paying attention.", characters: ["Jinx"]},
-    {text: "Only share it with someone who\'s earned your trust.", characters: ["Vi"]}
+    {text: "Drop hints just to see who's paying attention.", characters: ["Jinx"]},
+    {text: "Only share it with someone who's earned your trust.", characters: ["Vi"]}
   ]
 }
 ];
