@@ -40,26 +40,27 @@ export const questions = [
   options : [
     {text: "Building something that could change everything.", characters: ["Jayce"]},
     {text: "Exploring the city and helping where you can.", characters: ["Ekko"]},
-    {text: "A bit of chaos, just to keep things interesting.", characters: ["Jinx"]},
+    {text: "Spending the day with people who matter, doing something that feels real.", characters: ["Vi"]},
     {text: "Quietly observing and planning your next move.", characters: ["Viktor"]}
   ]
 },
 {
-  question : "Pick the quote that speaks to you most:",
-  options : [
-    {text: "Precision beats power.", characters: ["Caitlyn"]},
-    {text: "If it breaks, make it better.", characters: ["Jayce"]},
-    {text: "Nothing ever goes according to plan—perfect.", characters: ["Jinx"]},
-    {text: "The future belongs to those who evolve.", characters: ["Viktor"]}
+  question: "When working toward a deadline, what's your approach?",
+  options: [
+    { text: "I stay organized and stick closely to the plan.", characters: ["Caitlyn"] },
+    { text: "I work steadily and adjust the plan if needed.", characters: ["Jayce"] },
+    { text: "I put in a burst of energy and get it done with no plan.", characters: ["Jinx"] },
+    { text: "I focus on perfecting the details before beginning.", characters: ["Viktor"] }
   ]
-},
+}
+,
 {
-  question : "How do you react to authority?",
-  options : [
-    {text: "It's a tool—use it or bend it.", characters: ["Viktor"]},
-    {text: "You respect it, but won't be controlled by it.", characters: ["Vi"]},
-    {text: "You question it and challenge it often.", characters: ["Ekko"]},
-    {text: "You are it.", characters: ["Jayce"]}
+  question: "When someone disagrees with you, how do you respond?",
+  options: [
+    { text: "I listen, adapt if it makes sense, or refine my own approach.", characters: ["Viktor"] },
+    { text: "I hold my ground, but I’m open to honest conversation.", characters: ["Vi"] },
+    { text: "I challenge them to see things from a different angle.", characters: ["Ekko"] },
+    { text: "I explain my vision clearly and rally people behind it.", characters: ["Jayce"] }
   ]
 },
 {
@@ -75,7 +76,7 @@ export const questions = [
   question : "What's your vibe in a group?",
   options : [
     {text: "The one who keeps everyone moving forward.", characters: ["Jayce"]},
-    {text: "The wildcard—never predictable.", characters: ["Jinx"]},
+    {text: "The one who sparks ideas and keeps things fresh.", characters: ["Ekko"]},
     {text: "The silent observer, always calculating.", characters: ["Viktor"]},
     {text: "The one who throws the first punch when needed.", characters: ["Vi"]}
   ]
@@ -86,7 +87,7 @@ export const questions = [
     {text: "The kind that reshapes reality.", characters: ["Viktor"]},
     {text: "The strength to protect others.", characters: ["Vi"]},
     {text: "The influence to change minds.", characters: ["Caitlyn"]},
-    {text: "The spark that inspires progress.", characters: ["Ekko"]}
+    {text: "The power to control time.", characters: ["Ekko"]}
   ]
 },
 {
@@ -94,7 +95,7 @@ export const questions = [
   options : [
     {text: "Laugh it off and try again, differently.", characters: ["Jinx"]},
     {text: "Review every step until you understand it.", characters: ["Caitlyn"]},
-    {text: "Get up and power through.", characters: ["Vi"]},
+    {text: "Get up and power through.", characters: ["Jayce"]},
     {text: "Retreat, reflect, then come back stronger.", characters: ["Ekko"]}
   ]
 },
@@ -108,18 +109,18 @@ export const questions = [
   ]
 },
 {
-  question : "In conflict, what's your role?",
-  options : [
-    {text: "The strategist who sees all the angles.", characters: ["Caitlyn"]},
-    {text: "The shield standing between danger and your people.", characters: ["Vi"]},
-    {text: "The disruptor who flips the script", characters: ["Jinx"]},
-    {text: "The thinker who builds the solution.", characters: ["Jayce"]}
+  question: "How do you spend a free afternoon?",
+  options: [
+    { text: "I take a quiet walk and keep an eye out for anything unusual.", characters: ["Caitlyn"] },
+    { text: "I meet up with friends and find a little trouble to keep us sharp.", characters: ["Vi"] },
+    { text: "I dive into a messy project just to see where it goes.", characters: ["Jinx"] },
+    { text: "I tinker with a new invention or polish up an old one.", characters: ["Jayce"] }
   ]
 },
 {
   question : "How do you define freedom?",
   options : [
-    {text: "Living without limits, no matter the cost.", characters: ["Jinx"]},
+    {text: "Having the space to choose your own direction, without anyone pulling the strings.", characters: ["Vi"]},
     {text: "The ability to pursue your ideas fully.", characters: ["Jayce"]},
     {text: "Justice without compromise.", characters: ["Caitlyn"]},
     {text: "Carving your own path, even if it's messy.", characters: ["Ekko"]}
@@ -128,19 +129,19 @@ export const questions = [
 {
   question : "What draws people to you?",
   options : [
-    {text: "Your intensity and drive.", characters: ["Viktor"]},
+    {text: "Your intensity and drive.", characters: ["Jayce"]},
     {text: "Your wild charm.", characters: ["Jinx"]},
     {text: "Your clear logic and calm presence.", characters: ["Caitlyn"]},
     {text: "Your energy and belief in a better future.", characters: ["Ekko"]}
   ]
 },
 {
-  question : "Which metaphor fits you best?",
-  options : [
-    {text: "A lightning bolt that strikes and disappears.", characters: ["Jayce"]},
-    {text: "A loaded question no one wants to answer.", characters: ["Jinx"]},
-    {text: "A ticking clock counting toward something big.", characters: ["Ekko"]},
-    {text: "A broken part doesn’t always need replacing… sometimes it just needs a better purpose.", characters: ["Viktor"]}
+  question: "How do you handle a difficult problem?",
+  options: [
+    { text: "I break it down into steps and tackle it head-on.", characters: ["Jayce"] },
+    { text: "I look for a bold, unconventional way around it.", characters: ["Jinx"] },
+    { text: "I take a step back, think it through, and try again.", characters: ["Ekko"] },
+    { text: "I analyze it fully before making my move.", characters: ["Viktor"] }
   ]
 },
 {

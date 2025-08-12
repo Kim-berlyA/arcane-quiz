@@ -18,7 +18,7 @@ export async function loadContent(page) {
 
       <div class="divider">&nbsp;</div>
 
-      <button class="option js-option js-option-1">"Do something unexpected and see what happens.</button>
+      <button class="option js-option js-option-1">Do something unexpected and see what happens.</button>
       <button class="option js-option js-option-2">Tackle it head-on, no hesitation.</button>
       <button class="option js-option js-option-3">Look at the facts and find the cleanest solution.</button>
       <button class="option js-option js-option-4">Take a moment, rewind, and think it through.</button>
@@ -40,9 +40,9 @@ export async function loadContent(page) {
           <div class="result-image-container js-result-image-container">
             <img src="img/aVi.jpg" alt="character portrait" class="result-image">
           </div>
-          <div class="result-title js-result-title"> </div>
+          <div class="result-title js-result-title">Jinx — Unpredictable and Creative</div>
           <div class="result-text js-result-text">
-            Strategic and composed, you tend to approach important decisions with care and precision. You prefer to weigh your options fully before acting, and your calm presence often reassures those around you. While this carefulness might slow you down sometimes, it guarantees that when you do move forward, you do so with clarity and purpose.
+            You are unpredictable and creative, thriving in the chaos of life and turning challenges into opportunities to express yourself. Your ideas come fast and free, and you often act on impulse or instinct rather than overthinking, which makes you exciting and sometimes surprising to those around you. While your spontaneity can sometimes cause trouble, it also shows your fearless and bold nature. For the people you trust deeply, your loyalty is fierce, even if you express it in ways that others might find unusual or hard to read
           </div>
     `
     loadScriptOnce('./scripts/result.js');
